@@ -1,0 +1,42 @@
+catalogo([
+        {
+            "id": "01",
+            "nombre": "El Señor de los Anillos 1. La Comunidad del Anillo",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/41wPYSIVH1L._SX327_BO1,204,203,200_.jpg",
+            "autor":"J. R. R. Tolkien",
+            "editorial": "Editorial Planeta Mexicana, S.A. de C.V.",
+            "precio": "298.00",
+            "categoria":"fantasia",
+            "sinopsis":"La primera entrega de la trilogía de J. R. R. Tolkien El Señor de los Anillos Un héroe inesperado. Una misión peligrosa. La mayor aventura que jamás te hayan contado. En la adormecida e idílica Comarca, un joven hobbit recibe un encargo: custodiar el Anillo Único y emprender el viaje para su destrucción en la Grieta del Destino. Acompañado por magos, hombres, elfos y enanos, atravesará la Tierra Media y se internará en las sombras de Mordor, perseguido siempre por las huestes de Sauron, el Señor Oscuro, dispuesto a recuperar su creación para establecer el dominio definitivo del Mal.",
+            "stock": 2
+        },
+        {
+            
+            "id": "02",
+            "nombre": "El Señor de los Anillos 2. Las Dos Torres",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/41OoiDdiOlL._SX327_BO1,204,203,200_.jpg",
+            "autor":"J. R. R. Tolkien",
+            "editorial": "Editorial Planeta Mexicana, S.A. de C.V.",
+            "precio": "298.00",
+            "categoria":"fantasia",
+            "sinopsis":"La segunda entrega de la trilogía de J. R. R. Tolkien El Señor de los Anillos La misión parece abocada al fracaso, pero la aventura épica que se inició con La Comunidad del Anillo continúa… La Compañía se ha disuelto y sus integrantes emprenden caminos separados. Frodo y Sam avanzan solos en su viaje a lo largo del río Anduin, perseguidos por la sombra misteriosa de un ser extraño que también ambiciona la posesión del Anillo. Mientras, hombres, elfos y enanos se preparan para la batalla final contra las fuerzas del Señor del Mal.",
+            "stock": 2
+        }
+    
+]);
+
+vendidos([
+    {
+        "id": "03",
+        "nombre": "El Principito",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/41NfAUwZbeL._SX308_BO1,204,203,200_.jpg",
+        "autor":"Antoine De Saint-Exupéry",
+        "editorial": "Advanced Marketing, s. de R.L. de C.V",
+        "precio": "55.00",
+        "categoria":"fantasia",
+        "sinopsis":"El principito es una fábula infantil que disfrutan por igual los niños y los adultos.",
+        "stock": 2
+    },
+
+]);
+
