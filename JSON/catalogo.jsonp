@@ -1,6 +1,6 @@
 catalogo([
         {
-            "id": "01",
+            "id": "0",
             "nombre": "El Señor de los Anillos 1. La Comunidad del Anillo",
             "img": "https://images-na.ssl-images-amazon.com/images/I/41wPYSIVH1L._SX327_BO1,204,203,200_.jpg",
             "autor":"J. R. R. Tolkien",
@@ -12,7 +12,7 @@ catalogo([
         },
         {
             
-            "id": "02",
+            "id": "1",
             "nombre": "El Señor de los Anillos 2. Las Dos Torres",
             "img": "https://images-na.ssl-images-amazon.com/images/I/41OoiDdiOlL._SX327_BO1,204,203,200_.jpg",
             "autor":"J. R. R. Tolkien",
@@ -27,7 +27,7 @@ catalogo([
 
 vendidos([
     {
-        "id": "03",
+        "id": "2",
         "nombre": "El Principito",
         "img": "https://images-na.ssl-images-amazon.com/images/I/41NfAUwZbeL._SX308_BO1,204,203,200_.jpg",
         "autor":"Antoine De Saint-Exupéry",

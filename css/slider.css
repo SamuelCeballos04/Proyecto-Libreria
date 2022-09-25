@@ -38,6 +38,7 @@
     width: 100%;
     height: 350px;
     overflow: hidden;
+    cursor: pointer;
   }
   
   .product-thumb {
@@ -91,6 +92,7 @@
   
   .product-brand {
     text-transform: uppercase;
+    cursor: pointer;
   }
   
   .product-short-description {

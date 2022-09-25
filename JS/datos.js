@@ -5,13 +5,17 @@ var catalogo = datos =>{
     var html = ""
     app.libros.map(libro=>{
         html+=`
-        <div class="product-card" >
+    <div class="product-card">
         <div class="product-image">
-            <img src=${libro.img} class="product-thumb" alt="">
+            <a href="../detalles.html">
+                <img src=${libro.img} class="product-thumb" alt="" id="${libro.id}" onclick="prueba(this)">
+            </a>
             <button class="card-btn">Agregar al carrito</button>
         </div>
         <div class="product-info">
-            <h2 class="product-brand">${libro.nombre}</h2>
+            <a href="../detalles.html">
+                <h2 class="product-brand" id="${libro.id}" onclick="prueba(this)">${libro.nombre}</h2>
+            </a>
             <p class="product-short-description">${libro.autor}</p>
             <span class="price">${libro.precio}</span>
         </div>
@@ -29,13 +33,17 @@ var vendidos = datos =>{
     var html = ""
     app.libros.map(libro=>{
         html+=`
-        <div class="product-card" >
-        <div class="product-image">
-            <img src=${libro.img} class="product-thumb" alt="">
-            <button class="card-btn">Agregar al carrito</button>
+        <div class="product-card">
+            <div class="product-image">
+                <a href="../detalles.html">
+                    <img src=${libro.img} class="product-thumb" alt="" id="${libro.id}" onclick="prueba(this)">
+                </a>
+                <button class="card-btn">Agregar al carrito</button>
         </div>
         <div class="product-info">
-            <h2 class="product-brand">${libro.nombre}</h2>
+            <a href="../detalles.html">
+                <h2 class="product-brand" id="${libro.id}" onclick="prueba(this)">${libro.nombre}</h2>
+            </a>
             <p class="product-short-description">${libro.autor}</p>
             <span class="price">${libro.precio}</span>
         </div>
