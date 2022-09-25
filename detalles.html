@@ -18,7 +18,7 @@
 
   </head>
 
-  <body>
+  <body onload="onloadD(id)">
     
     <header>
       <div class="content">
@@ -44,8 +44,17 @@
               <button class="busqueda-form-btn"type="submit">Buscar</button>
           </form>
       </div>
+      <script>
+        //async function a(){
+        //console.log(id);
+        //const response = await fetch("../JSON/catalogo2.json");
+        //const json = await response.json();
+        //console.log(json.libros[id]);
+        //}
+        //a();
+      </script>
     <main class="container" id="detallespro">
-      <div class="left-column">
+      <!--div class="left-column">
         <img class="active" src="https://images-na.ssl-images-amazon.com/images/I/510YF2c-iUL._SX332_BO1,204,203,200_.jpg" heigth = "100" alt=""/>
       </div>
 
@@ -66,7 +75,7 @@
           <span>$569.99</span>
           <a href="https://designmodo.com/demo/product-page/#" class="cart-btn">Añadir al carrito</a>
         </div>
-      </div>
+      </div-->
     </main>
 
     <section class="product"> 
@@ -199,8 +208,9 @@
 
     <script src="./Tutorial_files/jquery.min.js.descarga" charset="utf-8"></script>
     <script src="./Tutorial_files/script.js.descarga" charset="utf-8"></script>
-    <script src="/JS/detalles.js"></script>
+    <script src="JS/detalles.js"></script>
     <script src="JSON/catalogo.jsonp"></script>
+    <script src="JSON/catalogo2.json"></script>
   
 
 </body>
