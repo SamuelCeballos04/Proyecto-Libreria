@@ -178,4 +178,29 @@ async function onloadD(id){
   </div>
 `;
 document.getElementById("detallespro").innerHTML = html;
+var genero=JSON.stringify(json.libros[id].categoria);
+console.log(genero);
+var html2 = "";
+let detalles = json.libros;
+for (var n in detalles){
+  if(JSON.stringify(detalles[n].categoria) == genero){
+    console.log(detalles[n].nombre);
+  html2+=`
+  <div class="product-card">
+      <div class="product-image">
+              <img src=${detalles[n].img} class="product-thumb" alt="" id="${detalles[n].id}" onclick="abrir(this)">
+          <button class="card-btn">Agregar al carrito</button>
+  </div>
+  <div class="product-info">
+      
+          <h2 class="product-brand" id="${detalles[n].id}" onclick="abrir(this)">${detalles[n].nombre}</h2>
+    
+      <p class="product-short-description">${detalles[n].autor}</p>
+      <span class="price">${detalles[n].precio}</span>
+  </div>
+</div>
+`;
+  }
+}
+document.getElementById("caja-libro-recomendacion").innerHTML = html2;
 }

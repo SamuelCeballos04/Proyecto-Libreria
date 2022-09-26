@@ -39,19 +39,10 @@
       </nav>
       <div class="busqueda">
           <form class="busqueda-form">
-              <input class="busqueda-form-inp" type="text" placeholder="Ingresa el nombre del libro">
-              <button class="busqueda-form-btn"type="submit">Buscar</button>
+              <input class="busqueda-form-inp" type="text" placeholder="Ingresa el nombre del libro" id="busc">
+              <button class="busqueda-form-btn"type="button" onclick="buscar()">Buscar</button>
           </form>
       </div>
-      <script>
-        //async function a(){
-        //console.log(id);
-        //const response = await fetch("../JSON/catalogo2.json");
-        //const json = await response.json();
-        //console.log(json.libros[id]);
-        //}
-        //a();
-      </script>
     <main class="container" id="detallespro">
       <!--div class="left-column">
         <img class="active" src="https://images-na.ssl-images-amazon.com/images/I/510YF2c-iUL._SX332_BO1,204,203,200_.jpg" heigth = "100" alt=""/>
@@ -78,11 +69,11 @@
     </main>
 
     <section class="product"> 
-      <!--h2 class="product-category">best selling</h2>
+      <h2 class="product-category">recomendaciones</h2>
       <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
       <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
-      <div id="caja-libro-vendido" class="product-container">
-          <div class="product-card">
+      <div id="caja-libro-recomendacion" class="product-container">
+          <!--div class="product-card">
               <div class="product-image">
                   <span class="discount-tag">50% off</span>
                   <img src="images/card1.jpg" class="product-thumb" alt="">
@@ -201,14 +192,13 @@
                   <p class="product-short-description">a short line about the cloth..</p>
                   <span class="price">$20</span><span class="actual-price">$40</span>
               </div>
-          </div>
-      </div-->
+          </div-->
+      </div>
   </section>
 
     <script src="./Tutorial_files/jquery.min.js.descarga" charset="utf-8"></script>
     <script src="./Tutorial_files/script.js.descarga" charset="utf-8"></script>
     <script src="JS/detalles.js"></script>
-    <script src="JSON/catalogo.jsonp"></script>
     <script src="JSON/catalogo2.json"></script>
   
 

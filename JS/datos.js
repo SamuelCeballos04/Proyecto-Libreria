@@ -1,5 +1,5 @@
 var app ={};
-var catalogo = datos =>{
+var fantasia = datos =>{
     console.log(datos);
     app.libros=datos;
     var html = ""
@@ -21,11 +21,11 @@ var catalogo = datos =>{
     `;
     console.log(libro.img)
     })
-document.getElementById("caja-libro").innerHTML = html;
+document.getElementById("caja-libro-fantasia").innerHTML = html;
 }
 
 var app ={};
-var vendidos = datos =>{
+var infantil = datos =>{
     app.libros=datos;
     var html = ""
     app.libros.map(libro=>{
@@ -45,5 +45,5 @@ var vendidos = datos =>{
     </div>
     `;
     })
-document.getElementById("caja-libro-vendido").innerHTML = html;
+document.getElementById("caja-libro-infantil").innerHTML = html;
 }

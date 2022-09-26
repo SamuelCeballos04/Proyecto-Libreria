@@ -1,4 +1,4 @@
-catalogo([
+fantasia([
 
     {
         "id": "0",
@@ -23,10 +23,13 @@ catalogo([
             "categoria":"fantasia",
             "sinopsis":"La segunda entrega de la trilogía de J. R. R. Tolkien El Señor de los Anillos La misión parece abocada al fracaso, pero la aventura épica que se inició con La Comunidad del Anillo continúa… La Compañía se ha disuelto y sus integrantes emprenden caminos separados. Frodo y Sam avanzan solos en su viaje a lo largo del río Anduin, perseguidos por la sombra misteriosa de un ser extraño que también ambiciona la posesión del Anillo. Mientras, hombres, elfos y enanos se preparan para la batalla final contra las fuerzas del Señor del Mal.",
             "stock": 2
-    }
+    },
+    
+
+    
 ]);
 
-vendidos([
+infantil([
     {
         "id": "2",
         "nombre": "El Principito",
@@ -34,7 +37,7 @@ vendidos([
         "autor":"Antoine De Saint-Exupéry",
         "editorial": "Advanced Marketing, s. de R.L. de C.V",
         "precio": "55.00",
-        "categoria":"fantasia",
+        "categoria":"infantil",
         "sinopsis":"El principito es una fábula infantil que disfrutan por igual los niños y los adultos.",
         "stock": 2
     }
