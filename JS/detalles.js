@@ -173,7 +173,7 @@ async function onloadD(id){
     </div>
     <div class="product-price">
       <span>$${json.libros[id].precio}</span>
-      <a href="https://designmodo.com/demo/product-page/#" class="cart-btn">Añadir al carrito</a>
+      <a href="https://designmodo.com/demo/product-page/#" class="cart-btn" id="${json.libros[id].id}">Añadir al carrito</a>
     </div>
   </div>
 `;
