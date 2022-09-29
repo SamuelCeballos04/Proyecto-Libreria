@@ -2,7 +2,15 @@
     "cuentas" : [
     {
         "user" : "Franco",
-        "pass" : "1234"
+        "pass" : "1234",
+        "direccion" : "Direccion",
+        "telefono" : "3311756820"
+    },
+    {
+        "user" : "admin",
+        "pass" : "1234",
+        "direccion" : "Direccion",
+        "telefono" : "3311756820"
     }
 ]
 }

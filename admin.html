@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Libreria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/search-bar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+
+</head>
+<body onload="onloadC(user)">
+    <header>
+        <div class="content">
+            <hgroup>
+                <h1>Libreria</h1>
+                <i id="nombre-cuenta">admin</i>
+            </hgroup>
+        </div>
+        <div class="overlay">   
+        </div>
+    </header>
+    <section class="site">
+        <nav>
+            <a href="admin.html">Inicio</a>
+            <a href="">Informacion</a>
+            <a href="datosadmin.html">Cuenta</a>
+            <a href="proveedor.html">Proveedores</a>
+        </nav>
+        <div class="busqueda">
+            <form class="busqueda-form">
+                <input class="busqueda-form-inp" type="text" placeholder="Ingresa el nombre del libro" id="busc">
+                <button class="busqueda-form-btn"type="button" onclick="buscar()">Buscar</button>
+            </form>
+        </div>
+        <section class="product"> 
+            <h2 class="product-category">Infantil</h2>
+            <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+            <div id="caja-libro-infantil" class="product-container">
+            </div>
+        </section>
+        <section class="product"> 
+            <h2 class="product-category">Fantasia</h2>
+            <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+            <div id="caja-libro-fantasia" class="product-container">
+            </div>
+        </section>
+    </section>
+    <script src="JS/slider.js"></script>
+    <script src="JS/busqueda.js"></script>
+    <script src="JS/datos.js"></script>
+    <script src="JSON/catalogo.jsonp"></script>
+    <script src="JS/detalles.js"></script>
+    <script src="JS/cuenta.js"></script>
+</body>
+</html>

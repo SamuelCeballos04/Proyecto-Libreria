@@ -24,7 +24,39 @@ fantasia([
             "sinopsis":"La segunda entrega de la trilogía de J. R. R. Tolkien El Señor de los Anillos La misión parece abocada al fracaso, pero la aventura épica que se inició con La Comunidad del Anillo continúa… La Compañía se ha disuelto y sus integrantes emprenden caminos separados. Frodo y Sam avanzan solos en su viaje a lo largo del río Anduin, perseguidos por la sombra misteriosa de un ser extraño que también ambiciona la posesión del Anillo. Mientras, hombres, elfos y enanos se preparan para la batalla final contra las fuerzas del Señor del Mal.",
             "stock": 2
     },
-    
+     {
+        "id": "3",
+        "nombre": "Fuego y Sangre: 300 Años Antes de Juego de Tronos. Historia de los Targaryen",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51SvY+YvGpL._SX329_BO1,204,203,200_.jpg",
+        "autor":"George R Martin",
+        "editorial": "Penguin Random House Grupo Editorial",
+        "precio": "480.00",
+        "categoria":"fantasia",
+        "sinopsis":"El nuevo libro de George R. R. Martin narra la fascinante historia de los Targaryen, la dinastía que reinó en Poniente trescientos años antes del inicio de Canción de hielo y fuego, la saga que inspiró la serie de HBO: Juego de tronos. Siglos antes de que tuvieran lugar los acontecimientos que se relatan en Canción de hielo y fuego, la casa Targaryen, la única dinastía de señores dragón que sobrevivió a la Maldición de Valyria, se asentó en la isla de Rocadragón. Aquí tenemos el primero de los dos volúmenes en el que el autor de Juego de tronos nos cuenta, con todo lujo de detalles, la historia de tan fascinante familia: empezando por Aegon Targaryen, creador del icónico Trono de Hierro, y seguido por el resto de las generaciones de Targaryens que lucharon con fiereza por conservar el poder, y el trono, hasta la llegada de la guerra civil que casi acaba con ellos. ¿Qué pasó realmente durante la Danza de dragones? ¿Por qué era tan peligroso acercarse a Valyria después de la Maldición? ¿Cómo era Poniente cuando los dragones dominaban los cielos? Estas, y otras muchas, son las preguntas a las que responde esta monumental crónica, narrada por un culto maestre de la Ciudadela, que anticipa el ya conocido universo de George R.R. Martin. Fuego y Sangre brindará a los lectores la oportunidad de tener otra visión de la fascinante historia de Poniente. Esta obra, magníficamente ilustrada con 85 láminas inéditas de Doug Wheatley, se convertirá, sin duda, en una lectura ineludible para todos los fans de la aclamada serie.",
+        "stock": 2
+    },
+    {
+        "id": "4",
+        "nombre": "Harry Potter y la piedra filosofal",
+        "img": "https://m.media-amazon.com/images/I/51uxZ1EkT4L.jpg",
+        "autor":"J.K. Rowling",
+        "editorial": "Pottermore Publishing",
+        "precio": "109.00",
+        "categoria":"fantasia",
+        "sinopsis":"Harry Potter nunca había oído nada sobre Hogwarts cuando las cartas comienzan a caer en el felpudo del número cuatro de Privet Drive. Escritas en tinta verde en un pergamino amarillento con un sello morado, sus horribles tíos las han confiscado velozmente. En su undécimo cumpleaños, un hombre gigante de ojos negros llamado Rubeus Hagrid aparece con una noticia extraordinaria: Harry Potter es un mago y tiene una plaza en el Colegio Hogwarts de Magia y Hechicería. ¡Una aventura increíble está a punto de empezar!",
+        "stock": 2
+    },
+    {
+        "id": "5",
+        "nombre": "Harry Potter y la cámara secreta",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51DRTsac+5L._SX394_BO1,204,203,200_.jpg",
+        "autor":"J.K. Rowling",
+        "editorial": "Penguin Random House Grupo Editorial",
+        "precio": "690.00",
+        "categoria":"fantasia",
+        "sinopsis":"Déjate deslumbrar por esta maravillosa edición especial de Harry Pottery la cámara secreta, diseñado e ilustrado por el prestigioso estudio MinaLima",
+        "stock": 2
+    }
 
     
 ]);
@@ -40,6 +72,165 @@ infantil([
         "categoria":"infantil",
         "sinopsis":"El principito es una fábula infantil que disfrutan por igual los niños y los adultos.",
         "stock": 2
+    },
+    {
+        "id": "6",
+        "nombre": "The Gruffalo",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51ywsuQFt4L._SX398_BO1,204,203,200_.jpg",
+        "autor":"Julia Donaldson",
+        "editorial": "Advanced Marketing, s. de R.L. de C.V",
+        "precio": "231.00",
+        "categoria":"infantil",
+        "sinopsis":"When Mouse takes a stroll through the woods, he meets a fox, an owl, and a snake who all want to eat him! So Mouse invents a gruffalo, a monster with terrible tusks and terrible claws, terrible teeth, and terrible jaws. But will Mouse's frightful description be enough to scare off his foes? After all, there's no such thing as a gruffalo . . . is there? Sturdy pages and a cozy trim make this rhyming read-aloud perfect for preschoolers. ",
+        "stock": 2
+    },
+    {
+        "id": "7",
+        "nombre": "Pocoyó. Primeras palabras",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/510mRwCryAL._SY497_BO1,204,203,200_.jpg",
+        "autor":"Zinkia Entertainment S. A.",
+        "editorial": "Advanced Marketing, s. de R.L. de C.V",
+        "precio": "357.00",
+        "categoria":"infantil",
+        "sinopsis":"Aprende tus primeras palabras con Pocoyó y sus amigos. Repasa los divertidos relieves que hay en cada página y aprenderás jugando",
+        "stock": 2
+    },
+    {
+        "id": "8",
+        "nombre": "The Gruffalo's Wean",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51q3ur3x37L._SX398_BO1,204,203,200_.jpg",
+        "autor":"Julia Donaldson",
+        "editorial": "Advanced Marketing, s. de R.L. de C.V",
+        "precio": "407.00",
+        "categoria":"infantil",
+        "sinopsis":"The Gruffalo books are among the most popular children's titles ever published, and James Robertson's Scots translations of them capture their warmth and excitement while adding a special Scottish dimension that weans and grown-ups alike just love.",
+        "stock": 2
+    },
+    {
+        "id": "9",
+        "nombre": "El Peor Día de Mi Vida",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51XbhhZJoTL._SX350_BO1,204,203,200_.jpg",
+        "autor":"Francisco Hinojosa ",
+        "editorial": "Penguin Random House Grupo Editorial",
+        "precio": "409.00",
+        "categoria":"infantil",
+        "sinopsis":"Mariano es un niño de once años que va en quinto de primaria, todos le dicen La Pulga y suele meterse en problemas. De Francisco Hinojosa, escritor de la peor señora del mundo y uno de los más importantes autores de literatura infantil contemporánea en México. Ilustrado por Rafael Barajas El Fisgón.",
+        "stock": 2
     }
 ])
 
+romance([
+    {
+        "id": "10",
+        "nombre": "Los siete maridos de Evelyn Lugo",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/81NL20IWYLL.jpg",
+        "autor":"Taylor Jenkins Reid ",
+        "editorial": "Ediciones Urano México",
+        "precio": "395.00",
+        "categoria":"romance",
+        "sinopsis":"Evelyn Hugo, el ícono de Hollywood que se ha recluido en su edad madura, decide al fin contar la verdad sobre su vida llena de glamour y de escándalos. Pero cuando elige para ello a Monique Grant, una periodista desconocida, nadie se sorprende más que la misma Monique. ¿Por qué ella? ¿Por qué ahora?",
+        "stock": 2
+    },
+    {
+        "id": "11",
+        "nombre": "Verity. La sombra de un engaño",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/91T-txq4WsL.jpg",
+        "autor":"Colleen Hoover",
+        "editorial": "Editorial Planeta Mexicana, S.A. de C.V.",
+        "precio": "318.00",
+        "categoria":"romance",
+        "sinopsis":"Lowen Ashleigh, autora al borde de la bancarrota, recibe un encargo que le cambiará la vida: Jeremy, el flamante marido de Verity Crawford, una de las autoras más importantes del momento, la contrata para terminar la serie de libros en la que trabajaba su mujer antes de sufrir un grave accidente que la ha dejado en coma",
+        "stock": 2
+    },
+    {
+        "id": "12",
+        "nombre": "Todas esas cosas que te dire mañana",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/91o5oI+4eFL.jpg",
+        "autor":"Elísabet Benavent ",
+        "editorial": "Penguin Random House Grupo Editorial",
+        "precio": "449.00",
+        "categoria":"romance",
+        "sinopsis":"Lo esperare aqui. Le dire cuanto lo quiero. Prometere quejarme menos. No ser esclava de mi trabajo. Pensar en nosotros. Si. Si Mañana le dire todas esas cosas Y se quedara. Haciendo gala de una destreza excepcional, Elisabet Benavent golpea el corazón de los lectores con una historia de saltos en el tiempo que reconstruye de forma hilarante y aleatoria los momentos estelares de una relación de pareja.",
+        "stock": 2
+    },
+    {
+        "id": "13",
+        "nombre": "La prisionera de oro",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/91UmGOPNFPL.jpg",
+        "autor":"Raven Kennedy ",
+        "editorial": "Advanced Marketing, s. de R.L. de C.V",
+        "precio": "399.00",
+        "categoria":"romance",
+        "sinopsis":"Primera entrega de una sorprendente serie de fantasía, perfecta para las lectoras de Sarah J. Maas y Jennifer L. Armentrout. Oro. Suelos de oro, paredes de oro, ropa de oro. En Alta Campana, en el castillo construido en las montañas heladas, todo está hecho de oro. Incluso yo. El rey Midas me rescató. Me sacaron de los barrios bajos y me colocaron en un pedestal. ",
+        "stock": 2
+    },
+    {
+        "id": "14",
+        "nombre": "Nosotros en la luna ",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/81RI7dPepLL.jpg",
+        "autor":"Alice Kellen ",
+        "editorial": "Editorial Planeta Mexicana, S.A. de C.V.",
+        "precio": "368.00",
+        "categoria":"romance",
+        "sinopsis":"Cuando Rhys y Ginger se conocen en las calles de la ciudad de la luz, no imaginan que sus vidas seunirán para siempre, a pesar de la distancia y de que no puedan ser más diferentes. Ella vive enLondres y a veces se siente tan perdida que se ha olvidado hasta de sus propios sueños. Él esincapaz de quedarse quieto en ningún lugar y cree saber quién es. Y cada noche su amistad creceentre emails llenos de confidencias, dudas e inquietudes. Pero ¿qué ocurre cuando el paso deltiempo pone a prueba su relación? ¿Es posible colgarse de la luna junto a otra persona sin poner enriesgo el corazón?",
+        "stock": 2
+    }
+])
+
+comic([
+     {
+        "id": "15",
+        "nombre": "Absolute All Star Superman",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/41kZ7gHvAbL._SX331_BO1,204,203,200_.jpg",
+        "autor":"Grant Morrison",
+        "editorial": "DC Comics",
+        "precio": "1009.00",
+        "categoria":"comic",
+        "sinopsis":"Witness the Man of Steel in exciting new adventures featuring Lex Luthor, Jimmy Olsen, Lois Lane, Bizarro, and more! The Man of Steel goes toe-to-toe with Bizarro, his oddball twin, and the new character Zibarro, also from the Bizarro planet.",
+        "stock": 2
+    },
+    {
+        "id": "16",
+        "nombre": "Fantastic Four: Full Circle",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/81iwuqBUv3L.jpg",
+        "autor":"Alex Ross",
+        "editorial": "Abrams Comicarts",
+        "precio": "439.00",
+        "categoria":"comic",
+        "sinopsis":"An all-new Marvel Comics graphic novel starring the Fantastic Four, written and illustrated by renowned artist Alex Ross It's a rainy night in Manhattan and not a creature is stirring except for . . . Ben Grimm. When an intruder suddenly appears inside the Baxter Building, the Fantastic Four--Mister Fantastic (Reed Richards), the Invisible Woman (Susan Storm Richards), the Human Torch (Johnny Storm), and the Thing (Ben Grimm)--find themselves surrounded by a swarm of invading parasites. These carrion creatures composed of Negative Energy come to Earth using a human host as a delivery system. But for what purpose? And who is behind this untimely invasion?",
+        "stock": 2
+    },
+    {
+        "id": "17",
+        "nombre": "Uzumaki ",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51Q3mSHOWxL._SX337_BO1,204,203,200_.jpg",
+        "autor":"Junji Ito",
+        "editorial": "Viz Media",
+        "precio": "426.00",
+        "categoria":"comic",
+        "sinopsis":"¡Una obra maestra del manga de terror, ahora disponible en una edición de lujo de tapa dura en inglés! Kurôzu-cho, un pequeño pueblo en la costa de Japón, está maldito. Según Shuichi Saito, el novio retirado de la adolescente Kirie Goshima, su pueblo no está embrujado por una persona o un ser, sino por un patrón: uzumaki, la espiral, la hipnótica forma secreta del mundo. Se manifiesta en todo, desde conchas marinas y remolinos en el agua hasta las marcas en espiral en el cuerpo de las personas, las locas obsesiones del padre de Shuichi y la voz de la cóclea en nuestro oído interno. A medida que la locura se extiende, los habitantes de Kurôzu-cho son arrastrados cada vez más profundamente en un remolino del que no hay retorno!",
+        "stock": 2
+    },
+    {
+        "id": "18",
+        "nombre": "Punisher: Bienvenido a casa",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/510B9E0x4BL._SX340_BO1,204,203,200_.jpg",
+        "autor":" Garth Ennis ",
+        "editorial": "Editorial Televisa",
+        "precio": "419.00",
+        "categoria":"comic",
+        "sinopsis":"Frank Castle, Punisher, un hombre con la fuerza de un ejército, está armado, listo para destruir a quien sea que se interponga en su camino y repartir entre los criminales la pena capital: la muerte. Punisher regresa para eliminar a la despiadada familia criminal de Ma Gnucci, al mismo tiempo que es perseguido por dos detectives del cuerpo especial de la Policía de Nueva York, el psicópata mercenario conocido como El Ruso y Daredevil, El Hombre Sin Miedo. Además, aparecen tres asesinos que siguen su ejemplo y quieren unir fuerzas con él. ",
+        "stock": 2
+    },
+    {
+        "id": "19",
+        "nombre": "Superman: Red Son",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/41EdgUUp7SS._SX322_BO1,204,203,200_.jpg",
+        "autor":" Mark Millar",
+        "editorial": "EDITORIAL TELEVISA",
+        "precio": "409.00",
+        "categoria":"comic",
+        "sinopsis":"¡Miren! ¡Arriba en el cielo! ¡Es un ave! ¡Es un avión! ¡Es... Superman! Un extraño visitante de otro mundo que puede cambiar el curso de los poderosos ríos, doblar acero con sus propias manos... y que al ser el líder de la clase obrera, combate en una pelea sin fin en nombre de Stalin, el socialismo y la expansión internacional del Pacto de Varsovia. La conocida historia de una nave kryptoniana que se estrella en la Tierra y en cuyo interior viaja un bebé que algún día se convertirá en el ser más poderoso del planeta, tiene un giro inesperado. Esta vez, la nave no aterriza en Smallville. En lugar de eso... ¡Establece su nuevo hogar en la Unión Soviética! ",
+        "stock": 2
+    }
+])
