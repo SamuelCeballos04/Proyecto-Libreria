@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Libreria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/search-bar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="content">
+            <hgroup>
+                <h1>Libreria</h1>
+                <i>wdaw</i>
+            </hgroup>
+        </div>
+        <div class="overlay">
+
+        </div>
+    </header>
+    <section class="site">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="">Categorias</a>
+            <a href="">Cuenta</a>
+            <a href="">Informacion</a>
+        </nav>
+        <div class="busqueda">
+            <form class="busqueda-form">
+                <input class="busqueda-form-inp" type="text" placeholder="Ingresa el nombre del libro" id="busc">
+                <button class="busqueda-form-btn"type="button" onclick="buscar()">Buscar</button>
+            </form>
+        </div>
+        <div class="login-page">
+            <div class="form">
+              <form class="register-form">
+                <input type="text" placeholder="name"/>
+                <input type="password" placeholder="password"/>
+                <input type="text" placeholder="email address"/>
+                <button>create</button>
+                <p class="pru">HOLAAAA</p>
+                <p class="eba"></p>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+              </form>
+              <form class="login-form">
+                <input type="text" placeholder="username" id="username"/>
+                <input type="password" placeholder="password" id="password"/>
+                <button type="button" onclick="validar()">login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+              </form>
+            </div>
+          </div>
+    </section>
+    <script src="JS/login.js"></script>
+    <script src="JS/cuenta.js"></script>
+</body>
+</html>
