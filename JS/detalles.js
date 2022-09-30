@@ -158,7 +158,7 @@ function carrito(element){
 }
 
 async function onloadD(id){
-  const response = await fetch("../JSON/catalogo2.json");
+  const response = await fetch("JSON/catalogo2.json");
   const json = await response.json();
   console.log(json.libros[id]);
   var html = "";
@@ -182,11 +182,7 @@ async function onloadD(id){
     </div>
     <div class="product-price">
       <span>$${json.libros[id].precio}</span>
-<<<<<<< HEAD
       <button class="busqueda-form-btn"type="button" onclick="carrito(this)">Añadir al carrito</button>
-=======
-      <a href="https://designmodo.com/demo/product-page/#" class="cart-btn" id="${json.libros[id].id}">Añadir al carrito</a>
->>>>>>> master
     </div>
   </div>
 `;
