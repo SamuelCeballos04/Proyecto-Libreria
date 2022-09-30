@@ -4,22 +4,25 @@ async function seleccionar(element){
     respaldo = document.getElementById("caja-libro-seleccionados").innerHTML;
     console.log(respaldo);
     id = element.id;
+    precio = element.precio;
     console.log(id);
     id2= document.getElementsByName(id).id;
     //console.log('Valor de ID2', id2);
     
     console.log("id2222");
     console.log(id2);
-    const response = await fetch("../JSON/catalogo2.json");
+    const response = await fetch("JSON/catalogo2.json");
     const json = await response.json();
     var html = "";
     html = respaldo;
-    if (id )
     for (var n in json.libros){
+        //costo = costo + (json.libros[n].precio);
         console.log(json.libros[n].id)
         if (id == json.libros[n].id){
+
         console.log("AAA")
         console.log(json.libros[n].nombre);
+        //console.log(costo)
         html+=`
 
         <div class="product-card">
@@ -36,15 +39,48 @@ async function seleccionar(element){
         </div>
         </div>
         
-    `;
+    `
+    ;
     document.getElementById("caja-libro-seleccionados").innerHTML = html;} 
     //document.getElementById("caja-libro-seleccionados").innerHTML = html; 
     }
     //document.getElementById("caja-libro-seleccionados").innerHTML = html;
   }
 
+  async function calcular(element){
+    console.log("Holaaaaaaa");
+    respaldo = document.getElementById("caja-precio").innerHTML;
+    console.log(respaldo);
+    id = element.id;
+    console.log(id);
+    id2= document.getElementsByName(id).id;
+    console.log("id2222");
+    console.log(id2);
+    const response = await fetch("JSON/catalogo2.json");
+    const json = await response.json();
+    var html = "";
+    html = respaldo;
+    for (var n in json.libros){
+        console.log(json.libros[n].id)
+        if (id == json.libros[n].id){
+        console.log("AAA")
+        console.log(json.libros[n].nombre);
+        precio += (json.libros[n].precio);
+        //html+=`
+        //<div class="product-info">
+            //<span class="price">${json.libros[n].precio}</span>
+        //</div>  
+    //`
+    ;
+    document.getElementById("caja-precio").innerHTML = html;} 
+    //document.getElementById("caja-libro-seleccionados").innerHTML = html; 
+    }
+    //document.getElementById("caja-libro-seleccionados").innerHTML = html;
+  }
+
+
 async function onloadC(){
-const response = await fetch("../JSON/catalogo2.json");
+const response = await fetch("JSON/catalogo2.json");
 const json = await response.json();
 var html = "";
 console.log(json.libros[1].nombre);
@@ -55,7 +91,7 @@ for (var n in json.libros){
     <div class="product-card">
     <div class="product-image">
             <img src=${json.libros[n].img} class="product-thumb" alt="" id="${json.libros[n].id}" onclick="abrir(this)">
-        <button class="card-btn" id="${json.libros[n].id}" onclick ="seleccionar(this)">Agregar al carrito</button>
+        <button class="card-btn" id="${json.libros[n].id}" onclick ="seleccionar(this)" onclick ="calcular(this)">Agregar al carrito</button>
     </div>
     <div class="product-info">
         
@@ -73,7 +109,7 @@ document.getElementById("caja-libro-todos").innerHTML = html;
 
 
 async function onloadS(){
-    const response = await fetch("../JSON/catalogo2.json");
+    const response = await fetch("JSON/catalogo2.json");
     const json = await response.json();
     var html = "";
     console.log(json.libros[1].nombre);
@@ -99,4 +135,3 @@ async function onloadS(){
     }
     document.getElementById("caja-libro-seleccionados").innerHTML = html;
     }
-
