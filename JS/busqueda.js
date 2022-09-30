@@ -6,7 +6,7 @@ function buscar(){
 }
 
 async function onloadB(dato){
-    const response = await fetch("../JSON/catalogo2.json");
+    const response = await fetch("JSON/catalogo2.json");
     const json = await response.json();
     console.log(json.libros);
     texto = JSON.stringify(json.libros);
