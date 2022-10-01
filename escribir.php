@@ -1,4 +1,6 @@
 <?php
+  header('Content-Type: application/json');
+
         $user = $_POST["user"];
         $pass = $_POST["pass"];
         $id = $_POST["id"];
@@ -17,5 +19,5 @@
         $objeto2 = [$pedido=>["id"=>$pedido]];
         $array_data2[]=$objeto2;
         $final_data2 = json_encode($array_data2);
-        file_put_contents($file, $final_data2); 
+        file_put_contents($file, $final_data2);
 ?>

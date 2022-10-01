@@ -10,10 +10,10 @@ async function validar(){
     const obj = JSON.parse(object);
     console.log(obj);
     console.log("aaaa");
-    for (var n in json.cuentas){
-        if (json.cuentas[n].user==user){
+    for (var n in json){
+        if (json[n].user==user){
             console.log("si");
-            if(json.cuentas[n].pass==pass){
+            if(json[n].pass==pass){
                 //acceso
                 console.log("si sos");
                 document.cookie = obj;
@@ -32,8 +32,22 @@ async function validar(){
                 }
             }
         }
-    }
-    
+    }   
+}
+
+async function crear(){
+    user = document.getElementById("usernameR").value;
+    pass = document.getElementById("contraseñaR").value;
+    direccion = document.getElementById("direccionR").value;
+    telefono = document.getElementById("telefonoR").value;
+    const response = await fetch("JSON/cuentas.json");
+    const json = await response.json();
+    $.ajax({
+        url: "crearC.php",
+        type: "POST",
+        data: {user: "Franco", pass: pass, direccion:direccion, telefono:telefono}
+
+    });
 }
 function onloadC(user, pass){
     console.log(user);

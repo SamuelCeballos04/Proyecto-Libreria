@@ -22,8 +22,9 @@ async function seleccionar(element){
         if (id == json.libros[n].id){
 
         console.log("AAA");
-        costo = (json.libros[n].precio);
-        preciototal = calcular();
+        costo = parseInt(json.libros[n].precio);
+        console.log(costo);
+        preciototal = parseInt(document.getElementById("caja-precio").innerHTML);
         console.log("Precio Total: ", preciototal);
         preciototal = preciototal + costo;
         console.log("Precio actualizado: ", preciototal)

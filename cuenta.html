@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 </head>
 <body>
@@ -26,8 +27,7 @@
     <section class="site">
         <nav>
             <a href="index.html">Inicio</a>
-            <a href="">Categorias</a>
-            <a href="">Cuenta</a>
+            <a href="datosuser.html">Cuenta</a>
             <a href="">Informacion</a>
         </nav>
         <div class="busqueda">
@@ -39,16 +39,18 @@
         <div class="login-page">
             <div class="form">
               <form class="register-form">
-                <input type="text" placeholder="name"/>
-                <input type="password" placeholder="password"/>
-                <input type="text" placeholder="email address"/>
-                <button>create</button>
-                <p class="message">Already registered? <a href="#">Sign In</a></p>
+                <input type="text" placeholder="username" id="usernameR"/>
+                <input type="password" placeholder="contraseña" id="contraseñaR"/>
+                <input type="text" placeholder="direccion" id="direccionR"/>
+                <input type="text" placeholder="telefono" id="telefonoR">
+                <button type="button" onclick="crear()">create</button>
+                <p class="message"></p>
               </form>
               <form class="login-form">
                 <input type="text" placeholder="username" id="username"/>
                 <input type="password" placeholder="password" id="password"/>
                 <button type="button" onclick="validar()">login</button>
+                <p class="message"></p>
               </form>
             </div>
           </div>
