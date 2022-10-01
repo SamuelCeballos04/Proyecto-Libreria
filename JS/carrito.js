@@ -10,19 +10,26 @@ async function seleccionar(element){
     //console.log('Valor de ID2', id2);
     
     console.log("id2222");
-    console.log(id2);
+    //console.log(id2);
     const response = await fetch("JSON/catalogo2.json");
     const json = await response.json();
+
     var html = "";
     html = respaldo;
     for (var n in json.libros){
         //costo = costo + (json.libros[n].precio);
-        console.log(json.libros[n].id)
+        //console.log(json.libros[n].id)
         if (id == json.libros[n].id){
 
-        console.log("AAA")
-        console.log(json.libros[n].nombre);
-        //console.log(costo)
+        console.log("AAA");
+        costo = (json.libros[n].precio);
+        preciototal = calcular();
+        console.log("Precio Total: ", preciototal);
+        preciototal = preciototal + costo;
+        console.log("Precio actualizado: ", preciototal)
+        document.getElementById("caja-precio").innerHTML = preciototal;
+        //console.log(json.libros[n].nombre);
+        //costo = console.log("Precio:", json.libros[n].precio)
         html+=`
 
         <div class="product-card">
@@ -48,7 +55,7 @@ async function seleccionar(element){
   }
 
   async function calcular(element){
-    console.log("Holaaaaaaa");
+    console.log("Elemento caja-precio");
     respaldo = document.getElementById("caja-precio").innerHTML;
     console.log(respaldo);
     id = element.id;
@@ -65,7 +72,8 @@ async function seleccionar(element){
         if (id == json.libros[n].id){
         console.log("AAA")
         console.log(json.libros[n].nombre);
-        precio += (json.libros[n].precio);
+        preciototal = (json.libros[n].precio);
+        //precio += (json.libros[n].precio);
         //html+=`
         //<div class="product-info">
             //<span class="price">${json.libros[n].precio}</span>
