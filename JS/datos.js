@@ -8,7 +8,6 @@ var fantasia = datos =>{
         <div class="product-card">
         <div class="product-image">
                 <img src=${libro.img} class="product-thumb" alt="" id="${libro.id}" onclick="abrir(this)">
-            <button class="card-btn">Agregar al carrito</button>
     </div>
     <div class="product-info">
         
@@ -33,7 +32,6 @@ var infantil = datos =>{
         <div class="product-card">
             <div class="product-image">
                     <img src=${libro.img} class="product-thumb" alt="" id="${libro.id}" onclick="abrir(this)">
-                <button class="card-btn">Agregar al carrito</button>
         </div>
         <div class="product-info">
             
@@ -83,7 +81,6 @@ var romance = datos =>{
         <div class="product-card">
             <div class="product-image">
                     <img src=${libro.img} class="product-thumb" alt="" id="${libro.id}" onclick="abrir(this)">
-                <button class="card-btn">Agregar al carrito</button>
         </div>
         <div class="product-info">
             
@@ -107,7 +104,6 @@ var comic = datos =>{
         <div class="product-card">
             <div class="product-image">
                     <img src=${libro.img} class="product-thumb" alt="" id="${libro.id}" onclick="abrir(this)">
-                <button class="card-btn">Agregar al carrito</button>
         </div>
         <div class="product-info">
             

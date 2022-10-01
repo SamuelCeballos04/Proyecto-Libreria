@@ -1,8 +1,12 @@
-async function validar(){
+async function validar(user,pass){
     const response = await fetch("JSON/cuentas.json");
     const json = await response.json();
-    user = document.getElementById("username").value;
-    pass = document.getElementById("password").value;
+    console.log(user);
+    console.log(pass);
+    if(document.getElementById("username")){
+        user = document.getElementById("username").value;
+        pass = document.getElementById("password").value;
+    }
     const object = `{
         "user" : "${user}",
         "pass" : "${pass}"
@@ -53,6 +57,8 @@ function onloadC(user, pass){
     console.log(user);
     html=`${user}`;
     document.getElementById("nombre-cuenta").innerHTML = html;
+    const btn = document.getElementById("btn-usuario");
+    btn.setAttribute("onclick", `validar(user,pass)`);
 }
 
 function onloadDC(user,pass,direccion,telefono){
@@ -60,21 +66,25 @@ function onloadDC(user,pass,direccion,telefono){
     document.getElementById("nombre-cuenta").innerHTML = html;
     html= `<h1>Bienvenido!</h1>
     <p id="nombre-c">Nombre: ${user}</p>
-    <p id="direccion-c">Direccion: direccion</p>
-    <p id="telefono-c">Telefono: Telefono</p>
+    <p id="direccion-c">Direccion: ${direccion}</p>
+    <p id="telefono-c">Telefono: ${telefono}</p>
     <a href="index.html">
     <button type="button" class="btn btn-primary">Salir</button>
     </a>`;
     document.getElementById("datos-usuario").innerHTML=html;
+    const btn = document.getElementById("btn-usuario");
+    btn.setAttribute("onclick", `validar(user,pass)`);
 }
 
 async function detallesC(user,pass){
     const response = await fetch("JSON/cuentas.json");
     const json = await response.json();
-    for (var n in json.cuentas){
-        if (json.cuentas[n].user==user){
+    console.log(user);
+    console.log(pass);
+    for (var n in json){
+        if (json[n].user==user){
             console.log("si");
-            if(json.cuentas[n].pass==pass){
+            if(json[n].pass==pass){
                 //acceso
                 console.log("si sos");
                 if(user=="admin")
@@ -82,15 +92,15 @@ async function detallesC(user,pass){
                 var w=window.open("datosadmin.html");
                 w.user=user;
                 w.pass=pass;
-                w.direccion = json.cuentas[n].direccion;
-                w.telefono = json.cuentas[n].telefono;
+                w.direccion = json[n].direccion;
+                w.telefono = json[n].telefono;
                 }
                 else{
                     var w=window.open("datosuser.html");
                     w.user=user;
                     w.pass=pass;
-                    w.direccion = json.cuentas[n].direccion;
-                    w.telefono = json.cuentas[n].telefono;
+                    w.direccion = json[n].direccion;
+                    w.telefono = json[n].telefono;
                 }
             }
         }
