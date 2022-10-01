@@ -56,7 +56,7 @@ for (var n in detalles){
   <div class="product-card">
       <div class="product-image">
               <img src=${detalles[n].img} class="product-thumb" alt="" id="${detalles[n].id}" onclick="abrir(this)">
-          <button class="card-btn">Agregar al carrito</button>
+          
   </div>
   <div class="product-info">
       

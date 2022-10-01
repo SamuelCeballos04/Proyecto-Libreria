@@ -24,7 +24,6 @@ async function onloadB(dato){
         <div class="product-card">
         <div class="product-image">
                 <img src=${filtro[n].img} class="product-thumb" alt="" id="${filtro[n].id}" onclick="abrir(this)">
-            <button class="card-btn">Agregar al carrito</button>
         </div>
         <div class="product-info">
             

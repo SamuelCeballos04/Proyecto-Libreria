@@ -8,11 +8,14 @@ function abrir(element, user, pass){
     w.pass=pass;
   }
   
-  function carrito(element){
+  function carrito(element,user,pass){
     id = element.id;
     console.log(id);
+    console.log("user",user);
     var w=window.open("carrito.html");
     w.id=id;
+    w.user=user;
+    w.pass=pass;
   }
   
   async function onloadD(id, user, pass){
@@ -45,7 +48,7 @@ function abrir(element, user, pass){
       </div>
       <div class="product-price">
         <span>$${json.libros[id].precio}</span>
-        <button class="busqueda-form-btn"type="button" onclick="carrito(this)">Añadir al carrito</button>
+        <button class="busqueda-form-btn"type="button" onclick="carrito(this,user,pass)">Añadir al carrito</button>
       </div>
     </div>
   `;
@@ -62,7 +65,7 @@ function abrir(element, user, pass){
     <div class="product-card">
         <div class="product-image">
                 <img src=${detalles[n].img} class="product-thumb" alt="" id="${detalles[n].id}" onclick="abrir(this,user,pass)">
-            <button class="card-btn">Agregar al carrito</button>
+  
     </div>
     <div class="product-info">
         

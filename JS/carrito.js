@@ -36,7 +36,6 @@ async function seleccionar(element){
         <div class="product-card">
         <div class="product-image">
                 <img name="${json.libros[n].id}"src=${json.libros[n].img} class="product-thumb" alt="" id="${json.libros[n].id}" onclick="abrir(this)">
-            <button class="card-btn">Agregar al carrito</button>
         </div>
         <div class="product-info">
             
@@ -88,7 +87,9 @@ async function seleccionar(element){
   }
 
 
-async function onloadC(){
+async function onloadCA(user,pass){
+    html=`${user}`;
+    document.getElementById("nombre-cuenta").innerHTML = html;
 const response = await fetch("JSON/catalogo2.json");
 const json = await response.json();
 var html = "";
@@ -130,7 +131,6 @@ async function onloadS(){
         <div class="product-card">
         <div class="product-image">
                 <img src=${json.libros[n].img} class="product-thumb" alt="" id="${json.libros[n].id}" onclick="abrir(this)">
-            <button class="card-btn">Agregar al carrito</button>
         </div>
         <div class="product-info">
             
