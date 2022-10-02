@@ -1,5 +1,5 @@
 cont=0;
-let librosID = []
+librosID = []
 idPedidoInt = 0;
 prueba = 1
 

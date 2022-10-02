@@ -32,7 +32,7 @@ async function onloadD(id){
 
     <div class="product-configuration">
       <div class="cable-config">
-        <a href="https://www.paypal.com/es/webapps/mpp/paypal-popup">¿Cómo funciona el pago con PayPal?</a>
+        <a href="https://www.paypal.com/es/webapps/mpp/paypal-popup" target = "_blank">¿Cómo funciona el pago con PayPal?</a>
       </div>
     </div>
     <div class="product-price">

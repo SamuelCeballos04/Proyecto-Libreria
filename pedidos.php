@@ -1,15 +1,10 @@
 <?php
-<<<<<<< Updated upstream
         
-=======
-        header('Content-Type: application/json');
-
->>>>>>> Stashed changes
         $user = $_POST["user"];
         $id = $_POST["id"];
-        $libros = $_POST["librosID"];
-        //$file = "JSON/".$user.".json"
-        $file = "JSON/pruebapedido.json";
+        $libros = $_POST["libros"];
+        $file = "JSON/".$user.".json";
+        //$file = "JSON/pruebapedido.json";
         $current = file_get_contents($file);
         $array_data = json_decode($current, true);
         $objeto = ["id"=>$id,"libros"=>$libros];
