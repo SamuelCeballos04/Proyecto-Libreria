@@ -1,5 +1,10 @@
 <?php
+<<<<<<< Updated upstream
         
+=======
+        header('Content-Type: application/json');
+
+>>>>>>> Stashed changes
         $user = $_POST["user"];
         $id = $_POST["id"];
         $libros = $_POST["librosID"];
