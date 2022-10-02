@@ -13,6 +13,7 @@
     <link href = "carrito1.css" rel = "stylesheet">
     <link href = "carrito2.css" rel = "stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js%22%3E"></script>
 
 </head>
 <body onload="onloadCA(user,pass)">
@@ -67,7 +68,7 @@
                             <a href="carrito.html"><input type="button" class ="shopping" value="Vaciar carrito"></a>
                         </div>
                         <div class="medium-6 columns">
-                            <button class="tiny disabled" title="Work in progress">Pagar</button>
+                            <button class="shopping" title="Work in progress" onclick="pedir()">Pagar</button>
 
                         </div>
                     </div>
@@ -83,6 +84,8 @@
                 <div id="caja-libro-seleccionados" class="product-container">
                 </div>
             </section>
+
+        <p style = "display: none" id = "libros-invisible"></p>
 
             <div class="medium-8 columns">
                 <!--h1>Productos seleccionados</h1>
