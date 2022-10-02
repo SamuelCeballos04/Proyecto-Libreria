@@ -70,7 +70,19 @@ async function seleccionar(element){
     //document.getElementById("caja-libro-seleccionados").innerHTML = html;
   }
 
-  
+  /*function checkfile(enlacearchivo){
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', enlacearchivo, false);
+    xhr.send;
+
+    if(xhr.status == "404"){
+        return false;
+    }
+    else{
+        return true;
+    }
+  }*/
+
   async function pedir(){
 
     user = document.getElementById("nombre-cuenta").innerHTML;
@@ -82,6 +94,13 @@ async function seleccionar(element){
     console.log("Usuario Pedido: ", user);
     console.log("ID del pedido: ", idPedido);
     console.log("ID de los libros pedidos: ", librosID);
+    /*var existencia = checkfile("JSON/" + "hola" + ".json")
+    if (existencia == true){
+        console.log("El archivo ya existe")
+    }
+    else if (existencia == false){
+        console.log("El archivo no existe")
+    }*/
 
     $.ajax({
         url: "pedidos.php",
