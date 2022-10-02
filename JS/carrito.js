@@ -1,4 +1,9 @@
 cont=0;
+let librosID = []
+idPedidoInt = 0;
+idPedidoInt.parseInt();
+prueba = 1
+
 async function seleccionar(element){
     console.log("Holaaaaaaa");
     respaldo = document.getElementById("caja-libro-seleccionados").innerHTML;
@@ -20,7 +25,7 @@ async function seleccionar(element){
         //costo = costo + (json.libros[n].precio);
         //console.log(json.libros[n].id)
         if (id == json.libros[n].id){
-
+    
         console.log("AAA");
         costo = parseInt(json.libros[n].precio);
         console.log(costo);
@@ -29,6 +34,17 @@ async function seleccionar(element){
         preciototal = preciototal + costo;
         console.log("Precio actualizado: ", preciototal)
         document.getElementById("caja-precio").innerHTML = preciototal;
+        
+        librosID.push(json.libros[n].id);
+        console.log(librosID)
+        
+        
+       /*idIngresar = json.libros[n].id;
+        librosIngresar = document.getElementById("tomar-id").innerHTML;
+        librosIngresar = librosIngresar + idIngresar;
+        document.getElementById("tomar-id").innerHTML = librosIngresar;*/
+        
+        
         //console.log(json.libros[n].nombre);
         //costo = console.log("Precio:", json.libros[n].precio)
         html+=`
@@ -51,10 +67,33 @@ async function seleccionar(element){
     document.getElementById("caja-libro-seleccionados").innerHTML = html;} 
     //document.getElementById("caja-libro-seleccionados").innerHTML = html; 
     }
+    document.getElementById("libros-invisible").innerHTML = librosID;
     //document.getElementById("caja-libro-seleccionados").innerHTML = html;
   }
 
-  async function calcular(element){
+  
+  async function pedir(){
+
+    user = document.getElementById("nombre-cuenta").innerHTML;
+    //const response = await fetch("prueba3.json");
+    //const json = await response.json();
+    //console.log(id);
+    idPedidoInt = idPedidoInt + 1;
+    idPedido = idPedidoInt.toString();
+    console.log("Usuario Pedido: ", user);
+    console.log("ID del pedido: ", idPedido);
+    console.log("ID de los libros pedidos: ", librosID);
+
+    $.ajax({
+        url: "pedidos.php",
+        type: "POST",
+        data: {user: user, id: idPedido, libros: prueba}
+    });
+}
+
+
+
+async function calcular(element){
     console.log("Elemento caja-precio");
     respaldo = document.getElementById("caja-precio").innerHTML;
     console.log(respaldo);
@@ -86,6 +125,37 @@ async function seleccionar(element){
     //document.getElementById("caja-libro-seleccionados").innerHTML = html;
   }
 
+  async function tomarID(element){
+    //console.log("Elemento caja-precio");
+    respaldo = document.getElementById("tomar-id").innerHTML;
+    //console.log(respaldo);
+    id = element.id;
+    //console.log(id);
+    id2= document.getElementsByName(id).id;
+    //console.log("id2222");
+    //console.log(id2);
+    const response = await fetch("JSON/catalogo2.json");
+    const json = await response.json();
+    var html = "";
+    html = respaldo;
+    for (var n in json.libros){
+        //console.log(json.libros[n].id)
+        if (id == json.libros[n].id){
+        //console.log("AAA")
+        //console.log(json.libros[n].nombre);
+        librosIngresar = (json.libros[n].id);
+        //precio += (json.libros[n].precio);
+        //html+=`
+        //<div class="product-info">
+            //<span class="price">${json.libros[n].precio}</span>
+        //</div>  
+    //`
+    ;
+    document.getElementById("tomar-id").innerHTML;} 
+    //document.getElementById("caja-libro-seleccionados").innerHTML = html; 
+    }
+    //document.getElementById("caja-libro-seleccionados").innerHTML = html;
+  }
 
 async function onloadCA(user,pass){
     html=`${user}`;
