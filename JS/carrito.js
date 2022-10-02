@@ -82,6 +82,7 @@ async function seleccionar(element){
     console.log("Usuario Pedido: ", user);
     console.log("ID del pedido: ", idPedido);
     console.log("ID de los libros pedidos: ", librosID);
+    
 
     $.ajax({
         url: "pedidos.php",
