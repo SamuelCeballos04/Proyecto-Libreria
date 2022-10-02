@@ -1,11 +1,10 @@
 <?php
-        header('Content-Type: application/json');
         
         $user = $_POST["user"];
         $id = $_POST["id"];
-        $libros = $_POST["libros"];
+        $libros = $_POST["librosID"];
         //$file = "JSON/".$user.".json"
-        $file = "JSON/pruebapedido.json"
+        $file = "JSON/pruebapedido.json";
         $current = file_get_contents($file);
         $array_data = json_decode($current, true);
         $objeto = ["id"=>$id,"libros"=>$libros];

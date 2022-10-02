@@ -1,7 +1,6 @@
 cont=0;
 let librosID = []
 idPedidoInt = 0;
-idPedidoInt.parseInt();
 prueba = 1
 
 async function seleccionar(element){
@@ -87,7 +86,7 @@ async function seleccionar(element){
     $.ajax({
         url: "pedidos.php",
         type: "POST",
-        data: {user: user, id: idPedido, libros: prueba}
+        data: {user: user, id: idPedido, libros: librosID}
     });
 }
 

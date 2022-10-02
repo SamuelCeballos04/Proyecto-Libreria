@@ -61,6 +61,14 @@ function onloadC(user, pass){
     btn.setAttribute("onclick", `validar(user,pass)`);
 }
 
+function pedir2(){
+    $.ajax({
+        url: "pedidos.php",
+        type: "POST",
+        data: {user: "Franco", id: "1", libros: "1,2,3"}
+    });
+}
+
 function onloadDC(user,pass,direccion,telefono){
     html=`${user}`;
     document.getElementById("nombre-cuenta").innerHTML = html;
