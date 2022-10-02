@@ -94,6 +94,7 @@ async function seleccionar(element){
     console.log("Usuario Pedido: ", user);
     console.log("ID del pedido: ", idPedido);
     console.log("ID de los libros pedidos: ", librosID);
+<<<<<<< HEAD
     /*var existencia = checkfile("JSON/" + "hola" + ".json")
     if (existencia == true){
         console.log("El archivo ya existe")
@@ -101,6 +102,9 @@ async function seleccionar(element){
     else if (existencia == false){
         console.log("El archivo no existe")
     }*/
+=======
+    
+>>>>>>> master
 
     $.ajax({
         url: "pedidos.php",

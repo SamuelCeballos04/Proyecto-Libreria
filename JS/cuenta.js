@@ -61,15 +61,8 @@ function onloadC(user, pass){
     btn.setAttribute("onclick", `validar(user,pass)`);
 }
 
-function pedir2(){
-    $.ajax({
-        url: "pedidos.php",
-        type: "POST",
-        data: {user: "Franco", id: "1", libros: "1,2,3"}
-    });
-}
 
-function onloadDC(user,pass,direccion,telefono){
+async function onloadDC(user,pass,direccion,telefono){
     html=`${user}`;
     document.getElementById("nombre-cuenta").innerHTML = html;
     html= `<h1>Bienvenido!</h1>
@@ -79,6 +72,15 @@ function onloadDC(user,pass,direccion,telefono){
     <a href="index.html">
     <button type="button" class="btn btn-primary">Salir</button>
     </a>`;
+    const response = await fetch("JSON/"+ user + ".json");
+    const json = await response.json();
+    for (var n in json){
+        console.log(json[n].id);
+        dentro = json[n].id;
+        for(var m in dentro){
+            console.log(dentro[m]);
+        }
+    }
     document.getElementById("datos-usuario").innerHTML=html;
     const btn = document.getElementById("btn-usuario");
     btn.setAttribute("onclick", `validar(user,pass)`);
