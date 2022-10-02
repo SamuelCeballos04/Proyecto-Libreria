@@ -49,7 +49,7 @@ async function crear(){
     $.ajax({
         url: "crearC.php",
         type: "POST",
-        data: {user: "Franco", pass: pass, direccion:direccion, telefono:telefono}
+        data: {user: user, pass: pass, direccion:direccion, telefono:telefono}
 
     });
 }
