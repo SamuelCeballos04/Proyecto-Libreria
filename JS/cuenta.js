@@ -93,6 +93,7 @@ async function onloadDC(user,pass,direccion,telefono){
         }
         else{
         html2+=`<h1>Pedido ${json[n].id}</h1>
+        <h2>Envio ${json[n].envio}</h1>
         <section class="product"> 
             <h2 class="product-category">Pedido</h2>
             <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
