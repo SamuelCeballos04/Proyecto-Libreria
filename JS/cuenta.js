@@ -49,7 +49,7 @@ async function crear(){
     $.ajax({
         url: "crearC.php",
         type: "POST",
-        data: {user: user, pass: pass, direccion:direccion, telefono:telefono}
+        data: {user: user, pass: pass, direccion:direccion, telefono:telefono, libros:"1"}
 
     });
 }
@@ -74,16 +74,87 @@ async function onloadDC(user,pass,direccion,telefono){
     </a>`;
     const response = await fetch("JSON/"+ user + ".json");
     const json = await response.json();
+    const response2 = await fetch("JSON/catalogo2.json");
+    const json2 = await response2.json();
+    html2="";
+    html3="";
     for (var n in json){
         console.log(json[n].id);
-        dentro = json[n].id;
-        for(var m in dentro){
-            console.log(dentro[m]);
+        dentro = json[n].libros;
+        if(json[n].id=="0"){
+            html2+=`<h1>Pedido de Ejemplo</h1>
+        <section class="product"> 
+            <h2 class="product-category">Pedido</h2>
+            <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+            <div id="caja-libro-pedido${json[n].id}" class="product-container">
+            </div>
+        </section>`;
         }
+        else{
+        html2+=`<h1>Pedido ${json[n].id}</h1>
+        <section class="product"> 
+            <h2 class="product-category">Pedido</h2>
+            <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+            <div id="caja-libro-pedido${json[n].id}" class="product-container">
+            </div>
+        </section>`;
+        }
+
+       
     }
+    document.getElementById("pedidos").innerHTML=html2;
     document.getElementById("datos-usuario").innerHTML=html;
     const btn = document.getElementById("btn-usuario");
     btn.setAttribute("onclick", `validar(user,pass)`);
+}
+
+async function cargarP(){
+    const response = await fetch("JSON/"+ user + ".json");
+    const json = await response.json();
+    const response2 = await fetch("JSON/catalogo2.json");
+    const json2 = await response2.json();
+    html2="";
+    html3="";
+    for (var n in json){
+        console.log(json[n].id);
+        dentro = json[n].libros;
+        for(var m in dentro){
+            for (x in json2.libros){
+                if(dentro[m]==json2.libros[x].id){
+                console.log(json2.libros[x]);
+
+                    html3+=`
+
+                    <div class="product-card">
+                    <div class="product-image">
+                            <img name="${json2.libros[x].id}"src=${json2.libros[x].img} class="product-thumb" alt="" id="${json2.libros[x].id}" onclick="abrir(this)">
+                    </div>
+                    <div class="product-info">
+                        
+                            <h2 class="product-brand" id="${json2.libros[x].id}" onclick="abrir(this)">${json2.libros[x].nombre}</h2>
+                    
+                        <p class="product-short-description">${json2.libros[x].autor}</p>
+                        <span class="price">${json2.libros[x].precio}</span>
+                    </div>
+                    </div>
+                    
+                `;
+                console.log(json[n].id);
+                
+                }
+
+            } 
+            console.log(dentro[m]);
+
+        }
+        var prueba=`caja-libro-pedido${json[n].id}`;
+        var documento = document.getElementById(`caja-libro-pedido${json[n].id}`);
+            documento.innerHTML = html3;
+            html3="";
+        console.log(prueba);
+    }
 }
 
 async function detallesC(user,pass){

@@ -8,10 +8,10 @@ function abrir(element, user, pass){
     w.pass=pass;
   }
   
-  function carrito(element,user,pass){
-    id = element.id;
-    console.log(id);
+  function carrito(id,user,pass){
+    console.log("aaaaaxa<wdwef", id);
     console.log("user",user);
+    id = id.toString();
     var w=window.open("carrito.html");
     w.id=id;
     w.user=user;
@@ -20,6 +20,7 @@ function abrir(element, user, pass){
   
   async function onloadD(id, user, pass){
     console.log(user);
+    console.log("idddddfefa",id);
     html=`${user}`;
     const btn = document.getElementById("btn-usuario");
     btn.setAttribute("onclick", `validar(user,pass)`);
@@ -48,7 +49,7 @@ function abrir(element, user, pass){
       </div>
       <div class="product-price">
         <span>$${json.libros[id].precio}</span>
-        <button class="busqueda-form-btn"type="button" onclick="carrito(this,user,pass)">Añadir al carrito</button>
+        <button class="busqueda-form-btn"type="button" onclick="carrito(${id},user,pass)">Añadir al carrito</button>
       </div>
     </div>
   `;

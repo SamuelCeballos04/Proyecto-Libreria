@@ -16,7 +16,7 @@
     <script type="text/javascript" src="jquery.js"></script>
 
 </head>
-<body onload="onloadCA(user,pass)">
+<body onload="onloadCA(id,user,pass)">
     <header>
         <div class="content">
             <hgroup>
@@ -65,7 +65,7 @@
                     <div class="row">
                         <div class="medium-6 columns">
                             <!--button href = "carrito.html" class="tiny secondary" title="Work in progress">Vaciar carrito</button-->
-                            <a href="carrito.html"><input type="button" class ="shopping" value="Vaciar carrito"></a>
+                            <a onclick="carrito(user,pass)"><input type="button" class ="shopping" value="Vaciar carrito"></a>
                         </div>
                         <div class="medium-6 columns">
                             <!--button class="shopping" title="Work in progress" onclick="pedir()">Pagar</button-->
@@ -82,7 +82,9 @@
                     Total: <div id="caja-precio">0</div>
                 </div>
             </div>
-
+            <input name="envio" type="radio" id="DHL" value="DHL"> <label for="cbox2">DHL</label>
+            <input name="envio" type="radio" id="Fedex" value="Fedex"> <label for="cbox2">Fedex</label>
+            
         <h2 class="product-choice">Libros Seleccionados</h2>
             <section class="product"> 
                 <h2 class="product-category"></h2>
@@ -90,8 +92,7 @@
                 <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
                 <div id="caja-libro-seleccionados" class="product-container">
                 </div>
-            </section>
-
+        </a>
         <p style = "display: none" id = "libros-invisible"></p>
 
             <div class="medium-8 columns">

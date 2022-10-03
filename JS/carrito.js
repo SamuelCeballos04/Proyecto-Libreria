@@ -70,19 +70,7 @@ async function seleccionar(element){
     //document.getElementById("caja-libro-seleccionados").innerHTML = html;
   }
 
-  /*function checkfile(enlacearchivo){
-    var xhr = new XMLHttpRequest();
-    xhr.open('HEAD', enlacearchivo, false);
-    xhr.send;
-
-    if(xhr.status == "404"){
-        return false;
-    }
-    else{
-        return true;
-    }
-  }*/
-
+  
   async function pedir(){
 
     user = document.getElementById("nombre-cuenta").innerHTML;
@@ -94,17 +82,7 @@ async function seleccionar(element){
     console.log("Usuario Pedido: ", user);
     console.log("ID del pedido: ", idPedido);
     console.log("ID de los libros pedidos: ", librosID);
-<<<<<<< HEAD
-    /*var existencia = checkfile("JSON/" + "hola" + ".json")
-    if (existencia == true){
-        console.log("El archivo ya existe")
-    }
-    else if (existencia == false){
-        console.log("El archivo no existe")
-    }*/
-=======
     
->>>>>>> master
 
     $.ajax({
         url: "pedidos.php",
@@ -112,6 +90,13 @@ async function seleccionar(element){
         data: {user: user, id: idPedido, libros: librosID}
     });
 }
+
+function carrito(user,pass){
+    console.log("user",user);
+    var w=window.open("carrito.html");
+    w.user=user;
+    w.pass=pass;
+  }
 
 
 
@@ -179,7 +164,7 @@ async function calcular(element){
     //document.getElementById("caja-libro-seleccionados").innerHTML = html;
   }
 
-async function onloadCA(user,pass){
+async function onloadCA(id, user,pass){
     html=`${user}`;
     document.getElementById("nombre-cuenta").innerHTML = html;
 const response = await fetch("JSON/catalogo2.json");
@@ -206,6 +191,35 @@ for (var n in json.libros){
 `;  
 }
 document.getElementById("caja-libro-todos").innerHTML = html;
+console.log("idddddd", id)
+for (var n in json.libros){
+    console.log("prueba", json.libros[n]);
+    if (id == json.libros[n].id){
+        console.log("entroooo", json.libros[n].id);
+        var html2 = `
+
+        <div class="product-card">
+        <div class="product-image">
+                <img name="${json.libros[n].id}"src=${json.libros[n].img} class="product-thumb" alt="" id="${json.libros[n].id}" onclick="abrir(this)">
+        </div>
+        <div class="product-info">
+            
+                <h2 class="product-brand" id="${json.libros[n].id}" onclick="abrir(this)">${json.libros[n].nombre}</h2>
+
+            <p class="product-short-description">${json.libros[n].autor}</p>
+            <span class="price">${json.libros[n].precio}</span>
+        </div>
+        </div>
+
+        `
+        ;
+        document.getElementById("caja-libro-seleccionados").innerHTML=html2;
+        document.getElementById("caja-precio").innerHTML = json.libros[n].precio;
+    }
+
+
+}
+
 }
 
 
