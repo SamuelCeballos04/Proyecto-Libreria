@@ -3,7 +3,7 @@
         $user = $_POST["user"];
         $id = $_POST["id"];
         $libros = $_POST["libros"];
-        $envio = $_POST["envio"]
+        $envio = $_POST["envio"];
         $file = "JSON/".$user.".json";
         //$file = "JSON/pruebapedido.json";
         $current = file_get_contents($file);

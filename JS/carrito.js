@@ -74,15 +74,18 @@ async function seleccionar(element){
   async function pedir(){
 
     user = document.getElementById("nombre-cuenta").innerHTML;
-    //const response = await fetch("prueba3.json");
-    //const json = await response.json();
+    const response = await fetch("JSON/"+user+".json");
+    const json = await response.json();
     //console.log(id);
+    for (var n in json){
+        idPedidoInt=parseInt(json[n].id);
+    }
     idPedidoInt = idPedidoInt + 1;
     idPedido = idPedidoInt.toString();
     console.log("Usuario Pedido: ", user);
     console.log("ID del pedido: ", idPedido);
     console.log("ID de los libros pedidos: ", librosID);
-    
+
 
     $.ajax({
         url: "pedidos.php",
