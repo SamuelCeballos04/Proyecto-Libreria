@@ -85,7 +85,8 @@ async function seleccionar(element){
     console.log("Usuario Pedido: ", user);
     console.log("ID del pedido: ", idPedido);
     console.log("ID de los libros pedidos: ", librosID);
-    
+    envio = document.querySelector('input[name="envio"]:checked').value;
+    console.log("valooooor", envio);
 
     $.ajax({
         url: "pedidos.php",
@@ -168,6 +169,8 @@ async function calcular(element){
   }
 
 async function onloadCA(id, user,pass){
+    const btn = document.getElementById("btn-usuario");
+    btn.setAttribute("onclick", `validar(user,pass)`);
     html=`${user}`;
     document.getElementById("nombre-cuenta").innerHTML = html;
 const response = await fetch("JSON/catalogo2.json");
@@ -218,6 +221,7 @@ for (var n in json.libros){
         ;
         document.getElementById("caja-libro-seleccionados").innerHTML=html2;
         document.getElementById("caja-precio").innerHTML = json.libros[n].precio;
+        librosID.push(json.libros[n].id);
     }
 
 

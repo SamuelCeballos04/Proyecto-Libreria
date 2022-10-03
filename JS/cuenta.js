@@ -62,6 +62,7 @@ function onloadC(user, pass){
 }
 
 
+
 async function onloadDC(user,pass,direccion,telefono){
     html=`${user}`;
     document.getElementById("nombre-cuenta").innerHTML = html;
@@ -72,7 +73,7 @@ async function onloadDC(user,pass,direccion,telefono){
     <a href="index.html">
     <button type="button" class="btn btn-primary">Salir</button>
     </a>`;
-    const response = await fetch("JSON/"+ user + ".json");
+    const response = await fetch("JSON/"+user+".json");
     const json = await response.json();
     const response2 = await fetch("JSON/catalogo2.json");
     const json2 = await response2.json();
